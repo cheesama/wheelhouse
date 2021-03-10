@@ -48,11 +48,8 @@ while len(wheel_list):
         wheel = wheel_depth.pop(-1)
         os.system('pip wheel ' + wheel + ' --wheel-dir wheels')
 
-#install wheel files in directory
-#with open('temp_requirements.txt','w') as reqFile:
-#    reqFile.write(os.popen('ls wheels').read())
-#for wheel_file in os.listdir('wheels'):
-#    os.system(f"pip install --no-index --find-links=wheels/ wheels/{wheel_file}")
+#install just using downloaded files(move to wheel_folder inside)
+#os.system('pip install --no-index --find-links . target_wheel_file')
 
     
 
